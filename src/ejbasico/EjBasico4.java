@@ -2,16 +2,23 @@ package ejbasico;
 
 public class EjBasico4 {
     public static void main(String[] args) {
-        //declaro la variable nota1 y le doy un valor
-        int nota1=5;
 
-        //declaro la variable nota2 y led oy un valor
+        //Declaramos las variables enteras nota1 y nota2 y les damos un valor a cada una
+        int nota1=5;
         int nota2=4;
 
-        //declaro la varable media donde calculo la media de las dos notas anteriores sumandolas y luego dividiendolas entre 2
-        double media=((double)nota1+(double)nota2)/2;
+        //Declaramos la variable double media
+        double media;
 
-        //Muestro la media por consola
-        System.out.println("La nota media del alumno es "+media);
+        /**
+         * Calculamos la media de las dos notas anteriores casteandolas a double, sumándolas
+         * y luego dividiendolas entre 2 (numero de notas que hay)
+         */
+        media=((double)nota1+(double)nota2)/2;
 
-    }}
+        //Mostramos por consola la nota media
+        System.out.println("Sabiendo que el alumno ha sacado un "+nota1+" y un "+nota2+
+                ", la nota media del alumno es de "+media);
+
+    }
+}
